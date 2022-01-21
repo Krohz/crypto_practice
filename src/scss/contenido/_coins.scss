@@ -1,0 +1,40 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.coins{
+    position: absolute;
+    right: 10%;
+    bottom: 10rem;
+    @include m.tablet{
+        bottom: 5rem;
+    }
+    display: flex;
+    align-items: center;
+
+    &__sec{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 0 1.5rem;
+        color: #ff960b;
+        border:1px solid v.$blanco;
+        padding: 1.5rem;
+        @include m.tablet{
+            padding: 2rem 3rem;
+        }
+        border-radius: 1rem;
+    }
+
+    &__images{
+        width: 4rem;
+        margin: right 1rem; 
+    }
+    &__price{
+        margin: 0;
+        color: v.$blanco;
+        margin-bottom: .5rem;
+    }
+    &__name{
+        margin: 0;
+    }
+}

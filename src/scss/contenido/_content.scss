@@ -1,0 +1,39 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.contenido{
+    margin-top: 5rem;
+    @include m.tablet{
+        margin-top: 15rem;
+    }
+    &__heading{
+        font-size: 9rem;
+        margin-bottom: 1.5rem;
+        -webkit-text-stroke: 2px #0F002B;
+        color: white;
+    }
+    &__modificado{
+        color: #ff960b;
+    }
+    &__texto{
+        line-height: 2.2rem;
+        font-size: 1.4rem;
+    }
+    &__btn{
+        margin-top: 3rem;
+        background-color: #ff960b;
+        color: v.$blanco;
+        text-decoration: none;
+        padding: 1.5rem 3rem;
+        border-radius: 3rem;
+        transition: .3s;
+        text-align: center;
+        display:block;
+        @include m.tablet{
+            display: inline-block;
+        }
+        &:hover{
+            background-color: darken(#ff960b, 8);
+        }
+    }
+}
