@@ -9,7 +9,6 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - SASS
 - BEM
 
